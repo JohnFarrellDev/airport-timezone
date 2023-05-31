@@ -1,9 +1,9 @@
 import { mapIATAToTimezone } from "./codeToTimeZone"
 
 
-const number = 1685572135409
+const number = Number(new Date())
 
 const date = new Date(number)
 
-console.log(date.toLocaleString('en-US', { timeZone: mapIATAToTimezone['JFK'] }))
-console.log(date.toLocaleString('en-US', { timeZone: mapIATAToTimezone['STN'] }))
+console.log(date.toLocaleString('en-US', { timeZone: mapIATAToTimezone['JFK'] })) // new york
+console.log(date.toLocaleString('en-US', { timeZone: mapIATAToTimezone['STN'] })) // uk
